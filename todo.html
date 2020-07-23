@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KonsoueJS·Todo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="warn">
+                <p>阿sir，认真的吗</p>
+                <p><button id="sure">确定</button><button id="no">取消</button></p>
+            </div>
+        </div>
+        <!-- 登录 -->
+        <div class="loginBox">
+            <div class="issue">
+                Lorem ipsum dolor sit.
+            </div>
+            <div class="top">
+                <p>Login to Todo</p>
+            </div>
+            <div class="login">
+                <div class="input">
+                    <p><input id="userName" type="text" placeholder="请输入用户名"></p>
+                    <p class="userMess nameMess" id="nameLogin"></p>
+                    <p><input id="userPwd" type="password" placeholder="请输入密码" ></p>
+                    <p class="userMess pwdMess" id="pwdLogin"></p>
+                </div>
+                <div class="bottom">
+                    <p><button id="loginIn" class="toggle">Sign in</button></p>
+                    <p><button id="toRegis">Sign up</button></p>
+                    <label><input type="checkbox" name="" id="autoLogin">Remember Me</label>
+                </div>
+            </div>
+            <div class="register">
+                <div class="input">
+                    <p><input id="Name" type="text" placeholder="请输入注册的用户名"></p>
+                    <p class="userMess nameMess" id="nameRegis"></p>
+                    <p><input id="Pwd" type="password" placeholder="请输入注册的密码" ></p>
+                    <p class="userMess pwdMess" id="pwdRegis"></p>
+                </div>
+                <div class="bottom">
+                    <p><button id="register" class="toggle">Sign up</button></p>
+                    <p><button id="return">Go back</button></p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- 左边的侧边栏 -->
+        <aside class="learn">
+            <header>
+                <h2>JavaScript</h2>
+                <span class="sourceLink">Konsoue JavaScript Example</br><a href="">Source</a></span>
+            </header>
+            <hr>
+            <blockquote class="quote">
+                <p>JavaScript® (often shortened to JS) <br>is a lightweight, interpreted, object-oriented language with first-class functions, most known as the <br>scripting language for Web pages,<br> but used in many non-browser environments as well such as node.js or Apache CouchDB.</p>
+                <footer>JavaScript</footer>
+            </blockquote>
+            <footer>
+                <hr>
+                <em>If you have other helpful links to share, or find any of the links above no longer work, please <a href="">let us know.</a></em>
+            </footer>
+        </aside>
+        <!-- 中间的输入框 -->
+        <article class="main">
+            <h1>todos</h1>
+            <section class="todo">
+                <input type="checkbox" name="" id="toggle-all">
+                <label id="selectAll" for="toggle-all"></label>
+                <input id="todo" type="text" placeholder="What need to be done?">
+            </section>
+            <section class="lists ">
+                <ul class="items">
+                    <!-- <li class="">
+                        <div class="pick">
+                            <label for=""><input type="checkbox" name="" id=""></label>    
+                        </div>
+                        <div class="word">
+                            <p>Lorem ipsum dolor sit amet consect5</p>
+                            <span class="up">↑</span>
+                            <span class="delete">×</span>
+                        </div>
+                        <input type="text" name="" id="temporary">
+                    </li> -->
+                </ul>
+                <footer class="message">
+                    <span class="count">0 item left</span>
+                    <ul class="nav">
+                        <li id="All" class="select">All</li>
+                        <li id="Active" class="">Active</li>
+                        <li id="Completed">Completed</li>
+                    </ul>
+                    <span class="clear">Clear completed</span>
+                </footer>
+            </section>
+            <footer></footer>
+        </article>
+        <!-- 右边的回收站 -->
+        <aside class="rubbish">
+            <span class="turn"></span>
+            <div class="user">
+              <h2>🎈 可爱的
+                <em id="user">Konsoue</em>
+            🎈</h2>
+              <p><button id="loginOut">退出登录</button><button id="destroyID">注销账户</button></p>
+                
+            </div>
+            <div class="opera">
+                <button id="restore">恢复数据</button>
+                <button id="destroy">彻底删除</button>
+            </div>
+            <div class="bin">
+                <li class="first">
+                    <p><input type="checkbox" name="" id="">全选</p>
+                    <p>🚗回收站🚚</p>
+                  </li>
+                <ul>
+                    
+                    <!-- <li>
+                        <p><input type="checkbox" name="" id=""></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid optio expedita aut repellat necessitatibus. Amet iusto cupiditate corrupti eos laudantium impedit vero aperiam harum consequuntur, numquam praesentium placeat, quam provident.</p>
+                    </li>
+                    <li>
+                        <p><input type="checkbox" name="" id=""></p>
+                        <p> repellat necessitatibus. Amet iusto cupiditate corrupti eos laudantium impedit vero aperiam harum consequuntur, numquam praesentium placeat, quam provident.</p>
+                    </li> -->
+                    
+                </ul>
+            </div>
+        </aside>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
